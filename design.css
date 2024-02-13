@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+ 
+:root {
+  --main-color: #fdbe7b;
+  --second-color: #16468c;
+  --third-color: #34aced;
+  --forth-color: #ff6111;
+}
+
+body {
+    background-image: linear-gradient(60deg, var(--main-color), var(--third-color));
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-transform: capitalize;
+    font: 1em sans-serif;
+}
+
+.app {
+    background-color: #fff;
+    margin: 35px auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.app h1 {
+    color: #16468c;
+    border-bottom: 2px solid #777;
+    padding-bottom: 30px;
+}
+
+.app .qs-container h2 {
+    color: var(--forth-color);
+    font-size: 24px;
+}
+.app .qs-container .ans {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.app .qs-container .ans button {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: 1px solid var(--forth-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--second-color);
+}
+.app .qs-container .ans .one {
+    margin: 10px 0;
+    padding: 5px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: 1px solid var(--forth-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.app .qs-container .ans button:hover:not(:disabled) {
+    margin-left: 7px;
+}
+.app .qs-container .ans button:hover:disabled {
+    cursor: no-drop;
+}
+.app .qs-container .nextBtn {
+    display: flex;
+    margin: 0 auto;
+    padding: 5px 80px;
+    background: var(--third-color);
+    border: 1px solid var(--main-color);
+    border-radius: 9px;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.app .qs-container .ans  .incorrect {
+    background: #ff9393;
+}
+.app .qs-container .ans .correct {
+    background: #9aeabc;
+}
+    .app .qs-container .dis {
+        opacity: 0.7;
+    }
